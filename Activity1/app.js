@@ -66,3 +66,28 @@ btnSaudar.addEventListener("click",function(){
     mensagemAluno.textContent="Olá, " + nomeSemEspacos + " ! Seja bem vindo";
    
 })
+
+let contador=0;
+
+const numeroContador = document.getElementById("numeroContador");
+const btnAumentar = document.getElementById("btnAumentar");
+const btnDiminuir = document.getElementById("btnDiminuir");
+const btnZerar = document.getElementById("btnZerar");
+
+btnAumentar.addEventListener("click",function(){
+    contador ++;
+    numeroContador.textContent = contador;
+});
+
+btnDiminuir.addEventListener("click",function(){
+    contador --;
+    numeroContador.textContent = contador;
+});
+
+btnZerar.addEventListener("click",function(){
+    contador =0;
+    numeroContador.textContent = contador;
+});
+
+
+

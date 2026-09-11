@@ -184,6 +184,290 @@
             </div>
         </section>
 
+    
+  <!-- =====================================================
+             EXERCÍCIO 04
+             CONTADOR
+             ===================================================== -->
+        <section class="card shadow-sm mb-4">
+            <div class="card-body">
+
+                <span class="badge text-bg-danger mb-2">Exercício 04</span>
+
+                <h2 class="h4">Contador</h2>
+
+                <p>
+                    Este exemplo mostra uma variável JavaScript
+                    guardando o estado atual da aplicação.
+                </p>
+
+                <div class="contador-box text-center mb-3">
+                    <div class="text-muted">Valor atual</div>
+
+                    <!--
+                        O número exibido aqui será atualizado pelo JavaScript.
+                    -->
+                    <div
+                        id="numeroContador"
+                        class="display-4 fw-bold"
+                    >
+                        0
+                    </div>
+                </div>
+
+                <div class="d-flex gap-2 flex-wrap">
+
+                    <button
+                        id="btnDiminuir"
+                        class="btn btn-danger"
+                        type="button"
+                    >
+                        - Diminuir
+                    </button>
+
+                    <button
+                        id="btnAumentar"
+                        class="btn btn-success"
+                        type="button"
+                    >
+                        + Aumentar
+                    </button>
+
+                    <button
+                        id="btnZerar"
+                        class="btn btn-outline-secondary"
+                        type="button"
+                    >
+                        Zerar
+                    </button>
+                </div>
+            </div>
+        </section>
+    <!-- =====================================================
+             EXERCÍCIO 05
+             MOSTRAR E ESCONDER
+             ===================================================== -->
+        <section class="card shadow-sm mb-4">
+            <div class="card-body">
+
+                <span class="badge text-bg-info mb-2">Exercício 05</span>
+
+                <h2 class="h4">Mostrar e esconder conteúdo</h2>
+
+                <p>
+                    Usaremos a classe <code>d-none</code> do Bootstrap
+                    junto com <code>classList.toggle()</code>.
+                </p>
+
+                <button
+                    id="btnDetalhes"
+                    class="btn btn-info"
+                    type="button"
+                >
+                    Mostrar / esconder detalhes
+                </button>
+
+                <!--
+                    d-none significa display: none.
+                    Por isso esta caixa começa escondida.
+                -->
+                <div
+                    id="painelDetalhes"
+                    class="alert alert-info mt-3 d-none"
+                >
+                    Este conteúdo estava escondido e foi exibido
+                    sem recarregar a página.
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             EXERCÍCIO 06
+             CRIAR ELEMENTOS
+             ===================================================== -->
+        <section class="card shadow-sm mb-4">
+            <div class="card-body">
+
+                <span class="badge text-bg-secondary mb-2">Exercício 06</span>
+
+                <h2 class="h4">Criar elementos pelo JavaScript</h2>
+
+                <p>
+                    Neste exercício, o JavaScript criará novos
+                    elementos usando <code>createElement()</code>.
+                </p>
+
+                <button
+                    id="btnCriarItem"
+                    class="btn btn-secondary mb-3"
+                    type="button"
+                >
+                    Criar novo item
+                </button>
+
+                <!--
+                    Esta lista começa vazia.
+                    O JavaScript colocará itens dentro dela.
+                -->
+                <ul
+                    id="listaCriada"
+                    class="list-group"
+                >
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             EXERCÍCIO 07
+             LISTA DE TAREFAS
+             ===================================================== -->
+        <section class="card shadow-sm mb-4">
+            <div class="card-body">
+
+                <span class="badge text-bg-dark mb-2">Exercício 07</span>
+
+                <h2 class="h4">Lista de tarefas</h2>
+
+                <p>
+                    Aqui juntaremos entrada de dados, eventos,
+                    criação de elementos e remoção de elementos.
+                </p>
+
+                <div class="row g-2">
+
+                    <div class="col-md-9">
+                        <input
+                            type="text"
+                            id="inputTarefa"
+                            class="form-control"
+                            placeholder="Digite uma tarefa"
+                        >
+                    </div>
+
+                    <div class="col-md-3 d-grid">
+                        <button
+                            id="btnAdicionarTarefa"
+                            class="btn btn-dark"
+                            type="button"
+                        >
+                            Adicionar tarefa
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    id="avisoTarefa"
+                    class="small text-danger mt-2"
+                >
+                </div>
+
+                <ul
+                    id="listaTarefas"
+                    class="list-group mt-3"
+                >
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- =====================================================
+             EXERCÍCIO 08
+             FILTRO DE CARDS
+             ===================================================== -->
+        <section class="card shadow-sm mb-4">
+            <div class="card-body">
+
+                <span class="badge text-bg-primary mb-2">Exercício 08</span>
+
+                <h2 class="h4">Filtrar produtos</h2>
+
+                <p>
+                    Agora o JavaScript vai trabalhar com vários
+                    elementos ao mesmo tempo usando
+                    <code>querySelectorAll()</code>.
+                </p>
+
+                <label
+                    for="inputFiltroProduto"
+                    class="form-label"
+                >
+                    Pesquisar produto:
+                </label>
+
+                <input
+                    type="text"
+                    id="inputFiltroProduto"
+                    class="form-control mb-3"
+                    placeholder="Exemplo: mouse"
+                >
+
+                <div class="row g-3" id="areaProdutos">
+
+                    <!--
+                        Todos os produtos possuem a mesma classe "produto".
+                        Isso permite selecionar todos ao mesmo tempo.
+                    -->
+                    <div class="col-md-4 produto">
+                        <div class="card h-100 border-primary">
+                            <div class="card-body">
+                                <h3 class="h5 nome-produto">Mouse Gamer</h3>
+                                <p class="mb-0">R$ 150,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 produto">
+                        <div class="card h-100 border-primary">
+                            <div class="card-body">
+                                <h3 class="h5 nome-produto">Teclado Mecânico</h3>
+                                <p class="mb-0">R$ 300,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 produto">
+                        <div class="card h-100 border-primary">
+                            <div class="card-body">
+                                <h3 class="h5 nome-produto">Monitor 24 polegadas</h3>
+                                <p class="mb-0">R$ 900,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 produto">
+                        <div class="card h-100 border-primary">
+                            <div class="card-body">
+                                <h3 class="h5 nome-produto">Notebook</h3>
+                                <p class="mb-0">R$ 3.500,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 produto">
+                        <div class="card h-100 border-primary">
+                            <div class="card-body">
+                                <h3 class="h5 nome-produto">Headset</h3>
+                                <p class="mb-0">R$ 200,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 produto">
+                        <div class="card h-100 border-primary">
+                            <div class="card-body">
+                                <h3 class="h5 nome-produto">Webcam</h3>
+                                <p class="mb-0">R$ 180,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
 
 
 
